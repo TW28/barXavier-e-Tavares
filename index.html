@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAR Xavier&Tavares</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Rolamento suave -->
+
+	<script>
+		jQuery(document).ready(() => {
+
+			$(".scroll").click(function(event){
+
+				event.preventDefault()
+				$("html, body").animate({scrollTop:$(this.hash).offset().top}, 350)
+
+
+			});
+
+		});
+	</script>
+</head>
+<body>
+    <div class="responsive">
+    <header>
+            <a href="#slider" id="logo" class="scroll">Bar Xavier&Tavares</a>
+
+            <nav>
+                <a href="#sobre" class="scroll">SOBRE</a>
+                <a href="#cardapio" class="scroll">CARDÁPIO</a>
+                <a href="#entrega" class="scroll">ENTREGA</a>
+                <a href="#contato" class="scroll">CONTATO</a>
+            </nav>
+    </header>
+    </div>
+
+    <main>
+<!--01. SLIDER-->
+        <!--Espaço vazio-->
+        <div class="vazio"></div>
+
+
+        <div id="slider" class="box" style="margin: 10;padding: 100px;">
+		</div>
+
+        <div style="width: 100px; height: 100px;"></div>
+
+        <script>
+            var serie = 1;
+            var address = "url(img/s" + serie + ".png)";
+
+            function mudaImagem(){
+                document.getElementById('slider').style.backgroundImage=address;
+                mudaSlide()
+            }
+
+            function mudaSlide(){
+                if(serie < 3){
+                    serie++;
+                    address = "url(img/s" + serie + ".png)"
+                    setTimeout(mudaImagem, 3000);
+            }
+                else{
+                    serie = 1;
+                    address = "url(img/s" + serie + ".png)"
+                    setTimeout(mudaImagem, 3000);
+                    }
+            }
+
+            mudaSlide();
+        </script>
+
+
+<!---->
+<!--02. SOBRE-->
+        <div class="container" id="sobre">
+            <div class="row topico-text">
+                <div class="col-lg-12 topico-titulo">
+                    <br>
+                    <h1>SOBRE</h1>
+                    <br>
+                </div>
+
+                <div class="col-lg-6">
+                    <p>O BAR Xavier&Tavares oferece aos seus clientes um serviço que prima pela qualidade e tradição desde 2019. Temos quatro unidades no DF: Brasília, Águas Claras, Taguatinga e Guará.</p>
+
+					<p>BAR Xavier&Tavares também apresenta uma carta enorme de rótulos nacionais e importados, para todos os gostos e estilos. Além disso, também é possível encontrar torneiras de chopes seletos, tudo de alta qualidade. Para acompanhar, os petiscos e lanches da casa também são excelentes! Tudo isso em um ambiente contemporâneo e requitado. </p>
+
+					<img src="img/bebidas.jpg" class="img_quebra">
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/bebidas2.jpg" class="img_quebra">
+
+					<p>O BAR Xavier&Tavares oferece aos seus clientes um serviço que prima pela qualidade e tradição desde 2019. Temos quatro unidades no DF: Brasília, Águas Claras, Taguatinga e Guará.</p>
+
+					<p>BAR Xavier&Tavares também apresenta uma carta enorme de rótulos nacionais e importados, para todos os gostos e estilos. Além disso, também é possível encontrar torneiras de chopes seletos, tudo de alta qualidade. Para acompanhar, os petiscos e lanches da casa também são excelentes! Tudo isso em um ambiente contemporâneo e requitado. </p>
+                </div>
+
+            </div>
+        </div>
+<!---->
+<!--03. CARDÁPIO-->
+        <div class="container" id="cardapio">
+            <div class="row topico-text">
+                <div class="col-lg-12 topico-titulo">
+                        <br>
+                        <h1>CARDÁPIO</h1>
+                        <br>
+                </div>
+
+                <div class="col-lg-6">
+                    <p>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    </p>
+
+                    <br><br><br>
+                </div>
+                <div class="col-lg-6">
+                    <p>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    Lorem Ipsum ................................................. 20R$<br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+<!---->
+<!--04. ENTREGA-->
+        <div class="container" id="entrega">
+            <div class="row topico-text">
+                <div class="col-lg-12 topico-titulo">
+                    <br>
+                    <h1>ENTREGA</h1>
+                    <br>
+                </div>
+                
+        <div class="col-lg-12">
+            <p style="color: yellow;font-weight: bold;font-size: 200%;">PEÇA AGORA MESMO SEU DELIVERY:</p>
+        </div>
+
+        <div class="qua">
+            <a href="https://www.ubereats.com/"><div class="quaL"></div></a>
+            <a href="https://web.whatsapp.com/"><div class="quaR"></div></a>
+        </div>
+<!---->
+<!--05. CONTATO-->
+        <div class="container" id="contato">
+            <div class="row topico-text">
+
+                <div class="col-lg-12 topico-titulo">
+                        <br>
+                        <h1>CONTATO</h1>
+                        <br>
+                </div>
+
+                <script>
+                    function someTexto(id){
+                        document.getElementById(id).value="";
+
+                        if(id == 'msg'){
+                            document.getElementById(id).innerHTML="";
+                        }
+                    }
+                </script>
+
+                <div class="col-lg-12">
+
+                    <form>
+                        <div>
+                            <label for="nome" style="color: yellow;">Nome: </label>
+                            <input type="text" name="nome" id="caixa1" value="Nome" onclick="someTexto('caixa1');">
+                        </div>
+                        <div>
+                            <label for="email" style="color: yellow;">E-mail: </label>
+                            <input type="email" name="email" id="caixa2" value="exemplo@gmail.com" onclick="someTexto('caixa2');">
+                        </div>
+                        <div>
+                            <label for="msg" style="color: yellow;">Sobre: </label>
+                            <textarea id="msg" onclick="someTexto('msg');">Digite o texto aqui:</textarea>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 100px; height: 150px;"></div>
+
+
+    </main>
+
+
+
+    <footer>
+        &copy; 2021 por Thomas Weissenstein.
+    </footer>
+</body>
+</html>

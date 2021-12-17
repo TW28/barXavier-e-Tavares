@@ -1,0 +1,298 @@
+body{
+    background-color: black;
+	background-image: url("img/fundo3.png");
+	background-attachment: fixed;
+	background-size: 150%;
+
+    margin: 0;
+}
+
+header{
+    background-image: url("img/barra1.png");
+	background-size: 1500px;
+	padding: 50px 10px;
+	transition: 0.4s;
+	position: fixed;
+	width: 100%;
+
+
+    /*FAZ O HEADER FICA SOBRE O MAIN*/
+    z-index: 9;
+}
+
+
+/*!important  Ignora o estilo hierarquico do CSS*/
+/* REMOVER O SUBLINHADO*/
+a{
+    text-decoration: none!important;
+    color: white!important;
+}
+
+header a{
+    transition: 0.1s;
+}
+
+header a:hover{
+    color: yellow!important;
+    text-shadow: 0.1em 0.1em 0.7em yellow!important;
+}
+
+header a:active{
+    color: yellow!important;
+    text-shadow: 0.1em 0.1em 1em yellow!important;
+}
+
+
+
+#logo{
+    font-size: 35px;
+}
+
+nav{
+    float: right;
+    font-size: 20px;
+}
+
+nav a{
+    margin: 0 5px;
+}
+
+
+
+
+
+.vazio{
+    width: 100px; 
+    height: 200px;
+}
+
+#slider{
+	width: 800px;
+	height: 220px;
+	background-image: url("img/s1.png");
+	/*Centraliza a Div*/
+	margin: 0 auto;
+	transition: 1s;
+}
+
+
+
+
+
+.topico-titulo {
+    padding-bottom: 20px;
+}
+
+
+.topico-text h1 {
+    color: white;
+    font-size: 400%;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    border-bottom: yellow solid 3px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+p{
+	color: white;
+	font-size: 170%;
+}
+
+
+
+
+
+
+
+
+.qua{
+	width: 400px;
+	height: 200px;
+
+	margin: 0 auto;
+}
+
+.quaL{
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	background-image: url("img/qUber.png");
+	background-size: 100%;
+	display: inline-block;
+}
+
+.quaR{
+    float: right; 
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+
+	background-image: url("img/qWatts.png");
+	background-size: 100%;
+	background-color: white;
+}
+
+.quaL:hover{
+	background-color: yellow;
+}
+
+.quaR:hover{
+	background-color: yellow;
+}
+
+
+
+
+#espaço-vazio{
+    padding-bottom: 300px;
+}
+
+.corBody {
+	background: #AAA
+}
+
+form {
+    margin: 0 auto;
+    width: 440px;
+    padding: 10px;
+    border: 2px solid yellow;
+    background-color: #1C1C1C;
+    text-shadow: yellow 0em 0em 1.5em;
+}
+
+form div{
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    width: 300px;
+    border: 1px solid #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 90px;
+    resize: vertical;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: 5px;
+}
+
+
+
+
+
+footer{
+	color: white;
+	font-size: 12px;
+	background-color: #1C1C1C;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 480px){
+    #logo{
+        font-size: 0px;
+    }
+
+    nav{
+        font-size: 17px;
+    }
+
+    .topico-text {
+        font-size: 75%;
+    }
+
+    .img_quebra{
+        margin-bottom: 3px;
+
+        height: 90%;
+        width: 90%;
+    }
+
+
+    .vazio{
+        width: 100px; 
+        height: 200px;
+    }
+
+    #slider{
+        width: 90%;
+	    height: 90%;
+	    background-image: url("img/s1.png");
+	    /*Centraliza a Div*/
+	    margin: 0 auto;
+	    transition: 1s;
+    }
+
+
+    .col-lg-6{
+        font-size: 8px;
+    }
+
+    .col-lg-6 p{
+        text-align: center;
+        display: block;
+    }
+
+    .qua{
+        width: 200px;
+        height: 100px;
+    
+        margin: 0 auto;
+    }
+    
+    .quaL{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        background-image: url("img/qUber.png");
+        background-size: 100%;
+        display: inline-block;
+    }
+    
+    .quaR{
+        float: right; 
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    
+        background-image: url("img/qWatts.png");
+        background-size: 100%;
+        background-color: white;
+    }
+
+    #espaço-vazio{
+        padding-bottom: 100px;
+    }
+
+    
+
+    form {
+        width: 100%;
+        padding: 5px;
+    }
+    
+    label {
+        width: 90px;
+    }
+    
+    input, textarea {
+        width: 50%;
+    }
+}
+
